@@ -3,7 +3,6 @@ package xingstarx.com.listviewinsidescrollview.view;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
@@ -48,7 +47,6 @@ public class NestedListView extends ListView implements View.OnTouchListener, Ab
         int newHeight = 0;
         final int heightMode = MeasureSpec.getMode(heightMeasureSpec);
         int heightSize = MeasureSpec.getSize(heightMeasureSpec);
-        Log.e("NestedListView", "heightMode == " + (heightMode != MeasureSpec.EXACTLY));
         if (heightMode != MeasureSpec.EXACTLY) {
             ListAdapter listAdapter = getAdapter();
             if (listAdapter != null && !listAdapter.isEmpty()) {

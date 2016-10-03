@@ -2,7 +2,6 @@ package xingstarx.com.listviewinsidescrollview;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -26,10 +25,9 @@ public class MainActivity extends AppCompatActivity {
 
     private List<String> generateData() {
         List<String> dataList = new ArrayList<>();
-        for (int i = 0; i< 20; i++) {
+        for (int i = 0; i< 120; i++) {
             dataList.add("Android Developer " + i);
         }
-        Log.e(TAG, "dataList.size() == " + dataList.size());
         return dataList;
     }
 }
